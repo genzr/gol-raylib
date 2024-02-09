@@ -25,7 +25,8 @@
                 "kernel32.lib",
                 "msvcrt.lib",
                 "winmm.lib",
-                "/NODEFAULTLIB:libcmt.lib"
+                "/NODEFAULTLIB:libcmt.lib",
+                "/SUBSYSTEM:WINDOWS"
             ],
             "options": {
                 "cwd": "${fileDirname}"

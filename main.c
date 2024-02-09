@@ -50,7 +50,7 @@ void DrawGameOfLife() {
 }
 
 void HandleMouseEvents() {
-    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
+    if (IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
         Vector2 mousePos = GetMousePosition();
         uint32_t cellX = mousePos.x / cellSize;
         uint32_t cellY = mousePos.y / cellSize;
@@ -144,7 +144,7 @@ void UpdateGameOfLife() {
     }
 }
 
-int main (int argc, char* argvp[]) {
+int WinMain(int argc, char* argvp[]) {
     init();
     
     while (!WindowShouldClose())   {
